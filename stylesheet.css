@@ -295,9 +295,9 @@ footer p
         max-width: calc(100%/3);
     }
 }
-@media screen and (min-width: 361px)
+@media screen and (max-width:959px)
 {
-    .gallery a
+    .photos a
     {
         flex: 50%;
         max-width: 50%;
