@@ -85,6 +85,7 @@ article
     height: 200px;
     width: 100%;
     max-width: 100%;
+    
 }
 article h2
 {
@@ -156,6 +157,19 @@ footer p
 /* media query */
 @media screen and (min-width: 361px)
 {
+    header h1
+    {
+        font-size: 3em;
+    }
+    nav 
+    {
+        font-size: 1em;
+        padding: 2em;
+    }
+    article h2:nth-of-type(n)
+    {
+        font-size: 2em;
+    }
     article:nth-of-type(2), article:nth-of-type(3), figure:nth-of-type(3)
     {
         display: none;
@@ -166,6 +180,9 @@ footer p
         flex: 50%;
         max-width: 50%;
         border: 3px solid #ffffff;
+        justify-content: center;
+        margin: 0 auto;
+        background-position: center;
     }
     article:nth-of-type(4)
     {
@@ -301,5 +318,114 @@ footer p
     {
         flex: 50%;
         max-width: 50%;
+    }
+    header h1
+    {
+        font-size: 3em;
+    }
+    nav 
+    {
+        font-size: 1em;
+        padding: 2em;
+    }
+    article h2:nth-of-type(n)
+    {
+        font-size: 2em;
+    }
+}
+/* contact page */
+form
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0  auto;
+    background-color: #F5F5F5;
+    width: 960px;
+    max-width: 100%;
+    padding: 2em; 
+    border: 1px solid #000000;
+}
+label
+{
+	color:#707070;
+	background-color: #FFF;
+	font-size: 1.2em;
+	margin-top: 0.2em;
+    margin-left: 0.6em;
+}
+select
+{
+	float: right;
+	margin:0.2em;
+    width:60%;
+    border: 1px solid #000000;
+}
+option
+{
+	background-color: #FFF;
+    font-size: 0.5em;
+    border: 1px solid #000000;
+}
+fieldset
+{
+	background-color: #FFF;
+	background-size: cover;
+    margin:0.5em;
+    border: 1px solid #000000;
+}
+.contactFormFieldset
+{
+    height: 30px;
+    border: 1px solid #000000;
+}
+textarea
+{
+	border:none;
+	width:95%;
+	height: 80px;
+	font-size: 1.4em;
+	margin-top: 0.2em;
+    margin-left: 0.6em;
+}
+.btn 
+{
+    color: #ffffff;
+    background-color: #2699fb;
+    height: 30px;
+    width: 878px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* media query */
+@media screen and (max-width:960px)
+{
+    .btn
+    {
+        height: 50px;
+    }
+    article
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:561px)
+{
+    article
+    {
+        display: flex;
+        height: 100px;
+    }
+    header h1
+    {
+        font-size: 3em;
+    }
+    nav 
+    {
+        font-size: 1em;
+        padding: 2em;
+    }
+    article h2:nth-of-type(n)
+    {
+        font-size: 2em;
     }
 }
